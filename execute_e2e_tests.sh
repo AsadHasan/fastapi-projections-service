@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-docker-compose run e2e_tests &&
-docker-compose down
+docker-compose -f docker-compose.test.yml run sut &&
+docker-compose -f docker-compose.test.yml down
+

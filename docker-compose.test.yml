@@ -10,7 +10,7 @@ services:
       - 80:80
     environment: 
       - MODULE_NAME=src.main
-  e2e_tests:
+  sut:
     image: python
     volumes:
       - $PWD/tests:/app
