@@ -1,0 +1,10 @@
+.mypy_cache
+.vscode
+venv
+__pycache__
+.dccache
+.idea
+.pytype
+.pyre
+.pytest_cache
+

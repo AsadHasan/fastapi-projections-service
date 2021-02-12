@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nutmegplayground:
+    image: nutmegplayground
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    environment: 
+      - MODULE_NAME=src.main
+  e2e_tests:
+    image: python
+    volumes:
+      - $PWD/tests:/app
+    working_dir: /app
+    command: >
+      sh -c "pip install pytest requests && 
+             pytest end_to_end_test.py"
+    depends_on: 
+      - nutmegplayground
