@@ -13,10 +13,8 @@ services:
   sut:
     image: python
     volumes:
-      - $PWD/tests:/app
+      - $PWD:/app
     working_dir: /app
-    command: >
-      sh -c "pip install pytest requests && 
-             pytest end_to_end_test.py"
+    command: sh -c "pip install pytest requests fastapi && pytest"
     depends_on: 
       - nutmegplayground
