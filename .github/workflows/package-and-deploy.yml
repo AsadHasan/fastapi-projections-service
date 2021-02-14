@@ -79,6 +79,6 @@ jobs:
           docker push $IMAGE_ID:$VERSION
 
           docker tag $IMAGE_ID:$VERSION registry.heroku.com/$IMAGE_NAME
-          docker push registry.heroku.com/$IMAGE_NAME
-          heroku container:release $IMAGE_NAME -a fastapi-projections-service
-
+          APP=fastapi-projections-service
+          docker push registry.heroku.com/$APP
+          heroku container:release $IMAGE_NAME -a $APP
