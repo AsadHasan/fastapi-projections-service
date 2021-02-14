@@ -78,7 +78,7 @@ jobs:
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
 
-          docker tag $IMAGE_ID:$VERSION registry.heroku.com/$IMAGE_NAME
           APP=fastapi-projections-service
+          docker tag $IMAGE_ID:$VERSION registry.heroku.com/$APP
           docker push registry.heroku.com/$APP
           heroku container:release $IMAGE_NAME -a $APP
