@@ -77,9 +77,7 @@ jobs:
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
 
-          # docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
           docker tag $IMAGE_ID:$VERSION registry.heroku.com/$IMAGE_NAME
           docker push registry.heroku.com/$IMAGE_NAME
           heroku container:release $IMAGE_NAME -a fastapi-projections-service
-        # env:
-        #   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+
