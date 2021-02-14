@@ -49,8 +49,11 @@ jobs:
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
-      - name: Log into registry
+      - name: Log into GithHub registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - name: Log into Heroku registry
+        run: echo "${{ secrets.HEROKU_API_KEY }}" | docker login registry.heroku.com -u ${{ github.actor }} --password-stdin
 
       - name: Push image
         run: |
@@ -74,9 +77,9 @@ jobs:
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
 
-          docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+          # docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
           docker tag $IMAGE_ID:$VERSION registry.heroku.com/$IMAGE_NAME
           docker push registry.heroku.com/$IMAGE_NAME
           heroku container:release $IMAGE_NAME -a fastapi-projections-service
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        # env:
+        #   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
