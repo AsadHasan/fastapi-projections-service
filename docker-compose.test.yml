@@ -8,8 +8,6 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 80:80
-    environment: 
-      - MODULE_NAME=src.main
   sut:
     image: python
     volumes:
