@@ -105,4 +105,4 @@ jobs:
       run: |
         pytest tests/end_to_end_test.py
       env:
-        BASE_URL: https://fastapi-projections-service.herokuapp.com/
+        BASE_URL: https://fastapi-projections-service.herokuapp.com
