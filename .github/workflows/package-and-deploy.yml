@@ -56,7 +56,7 @@ jobs:
       - name: Log into Heroku registry
         run: heroku container:login
 
-      - name: Push image
+      - name: Push and deploy image
         run: |
           IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
 
@@ -79,6 +79,7 @@ jobs:
           docker push $IMAGE_ID:$VERSION
 
           APP=fastapi-projections-service
-          docker tag $IMAGE_ID:$VERSION registry.heroku.com/$APP
-          docker push registry.heroku.com/$APP
+          HEROKU_IMAGE=registry.heroku.com/$APP/web
+          docker tag $IMAGE_ID:$VERSION $HEROKU_IMAGE
+          docker push $HEROKU_IMAGE
           heroku container:release $IMAGE_NAME -a $APP
