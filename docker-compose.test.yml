@@ -16,3 +16,5 @@ services:
     command: sh -c "pip install pytest requests fastapi && pytest"
     depends_on: 
       - nutmegplayground
+    environment:
+      - BASE_URL=http://nutmegplayground

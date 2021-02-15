@@ -1,11 +1,20 @@
+import os
 from typing import Any, Dict, Union
 
 import requests
 from requests.models import Response
 
 
+def _get_url() -> str:
+    try:
+        return f"{os.environ['BASE_URL']}/projections"
+    except KeyError as exception:
+        raise ValueError(
+            f"Environment variable {exception.args[0]} not set"
+        ) from exception
+
+
 def test_projections() -> None:
-    url: str = "http://nutmegplayground/projections"
     params: Dict[str, Union[int, str]] = {
         "starting_amount": 10000,
         "monthly_contributions": 50,
@@ -14,7 +23,7 @@ def test_projections() -> None:
         "risk_level": "MC",
         "account_type": "ISA",
     }
-    response: Response = requests.request("GET", url, params=params)
+    response: Response = requests.request("GET", _get_url(), params=params)
     response.raise_for_status()
     projections: Dict[str, Any] = response.json()
     year_one_projections: Dict[str, int] = projections["Year one end"]
