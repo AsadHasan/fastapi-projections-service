@@ -16,6 +16,7 @@ on:
 env:
   IMAGE_NAME: projections_service
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  APP: fastapi-projections-service
 
 jobs:
   # Run tests.
@@ -78,10 +79,16 @@ jobs:
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
 
-          APP=fastapi-projections-service
           HEROKU_IMAGE=registry.heroku.com/$APP/web
           docker tag $IMAGE_ID:$VERSION $HEROKU_IMAGE
           docker push $HEROKU_IMAGE
-      
+  
+  deploy:  
+    needs: push
+
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    steps:
       - name: Deploy image
-        run: heroku container:release web
+        run: heroku container:release web -a $APP
