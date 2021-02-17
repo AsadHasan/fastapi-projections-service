@@ -13,7 +13,7 @@ services:
     volumes:
       - $PWD:/app
     working_dir: /app
-    command: sh -c "pip install pytest requests fastapi && pytest"
+    command: sh -c "pip install pytest requests && pytest tests/end_to_end_test.py"
     depends_on: 
       - nutmegplayground
     environment:

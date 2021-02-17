@@ -1,31 +1,13 @@
-from typing import Any, Dict, List, Literal, Tuple, Union
+from typing import Any, Dict, List, Tuple, Union
 
 import requests
-from fastapi import FastAPI, HTTPException, status
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
+from pydantic.error_wrappers import ValidationError
 from requests.models import Response
 
 from src.nutmeg_api_request_parameters import NutmegApiRequestParameters
-
-
-def _validate_starting_amount_and_timeframe(
-    starting_amount: int, timeframe: int
-) -> None:
-    minimum_starting_amount: int = 500
-    minimum_timeframe: int = 3
-    if starting_amount < minimum_starting_amount:
-        raise ValueError(
-            (
-                f"Provided starting amount {starting_amount} "
-                f"less than minimum {minimum_starting_amount}"
-            )
-        )
-    if timeframe < minimum_timeframe:
-        raise ValueError(
-            (
-                f"Provided timeframe {timeframe} less than "
-                f"minimum {minimum_timeframe}"
-            )
-        )
 
 
 def _get_parameters(
@@ -44,9 +26,6 @@ def _get_parameters(
 def _get_nutmeg_api_response(
     request_parameters: NutmegApiRequestParameters,
 ) -> Dict[str, Any]:
-    _validate_starting_amount_and_timeframe(
-        request_parameters.starting_amount, request_parameters.timeframe
-    )
     response: Response = requests.get(
         (
             f"https://api.nutmeg.com/nm-pot-service/projections/"
@@ -130,32 +109,21 @@ def _get_projections_info(
 app = FastAPI()
 
 
+@app.exception_handler(ValidationError)
+async def validation_exception_handler(request, exc: ValidationError) -> JSONResponse:
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+        content=jsonable_encoder({"detail": exc.errors()}),
+    )
+
+
 @app.get("/projections/")
 def get_all_projections(
-    starting_amount: int,
-    monthly_contributions: int,
-    timeframe: int,
-    investment_style: Literal["FIXED", "SRI", "MANAGED", "SMART_ALPHA"],
-    risk_level: Literal["MA", "MB", "MC", "MD", "ME"],
-    account_type: Literal["ISA", "GA"],
+    nutmeg_api_request_parameters: NutmegApiRequestParameters = Depends(),
 ) -> Dict[str, Dict[str, Union[int, float]]]:
-    parameters: NutmegApiRequestParameters = NutmegApiRequestParameters(
-        **{
-            "starting_amount": starting_amount,
-            "monthly_contributions": monthly_contributions,
-            "timeframe": timeframe,
-            "investment_style": investment_style,
-            "risk_level": risk_level,
-            "account_type": account_type,
-        }
-    )
     try:
-        return _get_projections_info(parameters)
+        return _get_projections_info(nutmeg_api_request_parameters)
     except requests.exceptions.HTTPError as exception:
         raise HTTPException(
             status_code=exception.response.status_code, detail=exception.strerror
-        ) from None
-    except ValueError as exception:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST, detail=exception.args[0]
         ) from None

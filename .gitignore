@@ -7,4 +7,5 @@ __pycache__
 .pytype
 .pyre
 .pytest_cache
-
+.coverage
+coverage.xml

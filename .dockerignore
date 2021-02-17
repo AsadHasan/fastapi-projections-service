@@ -30,3 +30,5 @@ venv
 .pytype
 .pyre
 LICENSE
+.coverage
+coverage.xml
