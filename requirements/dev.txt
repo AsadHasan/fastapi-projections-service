@@ -204,7 +204,7 @@ idna==2.10
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
-isort==4.3.21
+isort==5.7.0
 itsdangerous==1.1.0
 jedi==0.18.0
 Jinja2==2.11.3
@@ -324,7 +324,7 @@ idna==2.10
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
-isort==4.3.21
+isort==5.7.0
 itsdangerous==1.1.0
 jedi==0.18.0
 Jinja2==2.11.3
@@ -445,7 +445,7 @@ idna==2.10
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
-isort==4.3.21
+isort==5.7.0
 itsdangerous==1.1.0
 jedi==0.18.0
 Jinja2==2.11.3
