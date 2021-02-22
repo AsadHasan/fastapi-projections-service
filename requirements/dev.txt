@@ -1,4 +1,4 @@
-aniso8601==7.0.0
+aniso8601==9.0.0
 appdirs==1.4.4
 appnope==0.1.2
 backcall==0.2.0
@@ -81,7 +81,7 @@ starlette==0.13.6
 toml==0.10.2
 urllib3==1.26.3
 uvicorn==0.13.3
-aniso8601==7.0.0
+aniso8601==9.0.0
 appdirs==1.4.4
 appnope==0.1.2
 attrs==20.3.0
@@ -160,7 +160,7 @@ virtualenv==20.4.2
 wcwidth==0.2.5
 Werkzeug==1.0.1
 xxhash==2.0.0
-aniso8601==7.0.0
+aniso8601==9.0.0
 appdirs==1.4.4
 appnope==0.1.2
 astroid==2.4.1
@@ -280,7 +280,7 @@ wrapt==1.12.1
 xxhash==2.0.0
 zope.event==4.5.0
 zope.interface==5.2.0
-aniso8601==7.0.0
+aniso8601==9.0.0
 appdirs==1.4.4
 appnope==0.1.2
 astroid==2.4.1
@@ -401,7 +401,7 @@ wrapt==1.12.1
 xxhash==2.0.0
 zope.event==4.5.0
 zope.interface==5.2.0
-aniso8601==7.0.0
+aniso8601==9.0.0
 appdirs==1.4.4
 appnope==0.1.2
 astroid==2.4.1
