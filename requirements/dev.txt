@@ -163,7 +163,7 @@ xxhash==2.0.0
 aniso8601==7.0.0
 appdirs==1.4.4
 appnope==0.1.2
-astroid==2.4.1
+astroid==2.5
 attrs==20.3.0
 backcall==0.2.0
 bandit==1.7.0
@@ -283,7 +283,7 @@ zope.interface==5.2.0
 aniso8601==7.0.0
 appdirs==1.4.4
 appnope==0.1.2
-astroid==2.4.1
+astroid==2.5
 attrs==20.3.0
 backcall==0.2.0
 bandit==1.7.0
@@ -404,7 +404,7 @@ zope.interface==5.2.0
 aniso8601==7.0.0
 appdirs==1.4.4
 appnope==0.1.2
-astroid==2.4.1
+astroid==2.5
 attrs==20.3.0
 backcall==0.2.0
 bandit==1.7.0
