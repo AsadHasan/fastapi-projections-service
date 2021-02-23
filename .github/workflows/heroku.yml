@@ -50,6 +50,16 @@ jobs:
       - name: Run tests
         run: ./execute_end_to_end_test.sh
 
+  owasp_scan:
+    needs: end_to_end_test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run OWASP API scan
+        run: ./owasp_security_scan.sh
+
   # Push image to GitHub Packages and heroku registry.
   # See also https://docs.docker.com/docker-hub/builds/
   push:
