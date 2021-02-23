@@ -20,6 +20,6 @@ services:
       - BASE_URL=http://nutmegplayground
   owasp:
     image: owasp/zap2docker-stable
-    command: sh -c "zap-api-scan.py -t http://nutmegplayground/openapi.json -f openapi"
+    command: sh -c "zap-api-scan.py -t http://nutmegplayground/openapi.json -f openapi -aI"
     depends_on: 
       - nutmegplayground
