@@ -64,7 +64,7 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/
   push:
     # Ensure test job passes before pushing image.
-    needs: end_to_end_test
+    needs: owasp_scan
 
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
