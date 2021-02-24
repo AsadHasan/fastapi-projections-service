@@ -20,7 +20,7 @@ graphql-core==2.3.2
 graphql-relay==2.0.1
 graphql-server-core==2.0.0
 h11==0.12.0
-idna==2.10
+idna==3.1
 ipython==7.20.0
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
@@ -68,7 +68,7 @@ chardet==4.0.0
 click==7.1.2
 fastapi==0.63.0
 h11==0.12.0
-idna==2.10
+idna==3.1
 iniconfig==1.1.1
 packaging==20.9
 pluggy==0.13.1
@@ -108,7 +108,7 @@ graphql-relay==2.0.1
 graphql-server-core==2.0.0
 h11==0.12.0
 identify==1.5.13
-idna==2.10
+idna==3.1
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
@@ -200,7 +200,7 @@ graphql-server-core==2.0.0
 greenlet==1.0.0
 h11==0.12.0
 identify==1.5.13
-idna==2.10
+idna==3.1
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
@@ -320,7 +320,7 @@ graphql-server-core==2.0.0
 greenlet==1.0.0
 h11==0.12.0
 identify==1.5.13
-idna==2.10
+idna==3.1
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
@@ -441,7 +441,7 @@ graphql-server-core==2.0.0
 greenlet==1.0.0
 h11==0.12.0
 identify==1.5.13
-idna==2.10
+idna==3.1
 iniconfig==1.1.1
 ipython==7.20.0
 ipython-genutils==0.2.0
