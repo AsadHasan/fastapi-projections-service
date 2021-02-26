@@ -217,7 +217,7 @@ marshmallow-enum==1.5.1
 mccabe==0.6.1
 msgpack==1.0.2
 munch==2.5.0
-mypy==0.800
+mypy==0.812
 mypy-extensions==0.4.3
 nodeenv==1.5.0
 packaging==20.9
@@ -337,7 +337,7 @@ marshmallow-enum==1.5.1
 mccabe==0.6.1
 msgpack==1.0.2
 munch==2.5.0
-mypy==0.800
+mypy==0.812
 mypy-extensions==0.4.3
 nodeenv==1.5.0
 packaging==20.9
@@ -457,7 +457,7 @@ marshmallow-enum==1.5.1
 mccabe==0.6.1
 msgpack==1.0.2
 munch==2.5.0
-mypy==0.800
+mypy==0.812
 mypy-extensions==0.4.3
 nodeenv==1.5.0
 packaging==20.9
