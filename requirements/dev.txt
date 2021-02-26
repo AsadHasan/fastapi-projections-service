@@ -243,7 +243,7 @@ Pygments==2.8.0
 pylama==7.7.1
 pylint==2.7.1
 pylint-celery==0.3
-pylint-django==2.1.0
+pylint-django==2.4.2
 pylint-flask==0.6
 pylint-plugin-utils==0.6
 pyparsing==2.4.7
@@ -363,7 +363,7 @@ Pygments==2.8.0
 pylama==7.7.1
 pylint==2.7.1
 pylint-celery==0.3
-pylint-django==2.1.0
+pylint-django==2.4.2
 pylint-flask==0.6
 pylint-plugin-utils==0.6
 pyparsing==2.4.7
@@ -483,7 +483,7 @@ Pygments==2.8.0
 pylama==7.7.1
 pylint==2.7.1
 pylint-celery==0.3
-pylint-django==2.1.0
+pylint-django==2.4.2
 pylint-flask==0.6
 pylint-plugin-utils==0.6
 pyparsing==2.4.7
