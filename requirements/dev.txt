@@ -241,7 +241,7 @@ pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.0
 pylama==7.7.1
-pylint==2.7.1
+pylint==2.7.2
 pylint-celery==0.3
 pylint-django==2.4.2
 pylint-flask==0.6
@@ -361,7 +361,7 @@ pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.0
 pylama==7.7.1
-pylint==2.7.1
+pylint==2.7.2
 pylint-celery==0.3
 pylint-django==2.4.2
 pylint-flask==0.6
@@ -481,7 +481,7 @@ pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.0
 pylama==7.7.1
-pylint==2.7.1
+pylint==2.7.2
 pylint-celery==0.3
 pylint-django==2.4.2
 pylint-flask==0.6
