@@ -1,4 +1,5 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:latest
-RUN pip install --upgrade pip && pip install requests
+FROM nginx/unit:1.23.0-python3.9
+COPY config.json /docker-entrypoint.d/config.json
 COPY . /app
-ENV MODULE_NAME=src.main
+WORKDIR /app
+RUN pip3 install -r requirements/prod.txt
