@@ -40,7 +40,7 @@ promise==2.3
 prompt-toolkit==3.0.16
 psutil==5.8.0
 ptyprocess==0.7.0
-pydantic==1.8.1
+pydantic==1.8.2
 Pygments==2.8.1
 PyYAML==5.4.1
 regex==2020.11.13
@@ -73,7 +73,7 @@ iniconfig==1.1.1
 packaging==20.9
 pluggy==0.13.1
 py==1.10.0
-pydantic==1.8.1
+pydantic==1.8.2
 pyparsing==2.4.7
 pytest==6.2.2
 requests==2.25.1
@@ -134,7 +134,7 @@ prompt-toolkit==3.0.16
 psutil==5.8.0
 ptyprocess==0.7.0
 py==1.10.0
-pydantic==1.8.1
+pydantic==1.8.2
 Pygments==2.8.1
 pyparsing==2.4.7
 pyre-extensions==0.0.21
@@ -236,7 +236,7 @@ psutil==5.8.0
 ptyprocess==0.7.0
 py==1.10.0
 pycodestyle==2.6.0
-pydantic==1.8.1
+pydantic==1.8.2
 pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.1
@@ -356,7 +356,7 @@ psutil==5.8.0
 ptyprocess==0.7.0
 py==1.10.0
 pycodestyle==2.6.0
-pydantic==1.8.1
+pydantic==1.8.2
 pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.1
@@ -476,7 +476,7 @@ psutil==5.8.0
 ptyprocess==0.7.0
 py==1.10.0
 pycodestyle==2.6.0
-pydantic==1.8.1
+pydantic==1.8.2
 pydocstyle==5.1.1
 pyflakes==2.2.0
 Pygments==2.8.1
