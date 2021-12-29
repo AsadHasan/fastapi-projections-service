@@ -156,7 +156,7 @@ typing-inspect==0.6.0
 ujson==4.0.2
 urllib3==1.26.3
 uvicorn==0.13.3
-virtualenv==20.4.2
+virtualenv==20.11.1
 wcwidth==0.2.5
 Werkzeug==1.0.1
 xxhash==2.0.0
@@ -273,7 +273,7 @@ typing-inspect==0.6.0
 ujson==4.0.2
 urllib3==1.26.3
 uvicorn==0.13.3
-virtualenv==20.4.2
+virtualenv==20.11.1
 wcwidth==0.2.5
 Werkzeug==1.0.1
 wrapt==1.12.1
@@ -394,7 +394,7 @@ typing-inspect==0.6.0
 ujson==4.0.2
 urllib3==1.26.3
 uvicorn==0.13.3
-virtualenv==20.4.2
+virtualenv==20.11.1
 wcwidth==0.2.5
 Werkzeug==1.0.1
 wrapt==1.12.1
@@ -514,7 +514,7 @@ typing-inspect==0.6.0
 ujson==4.0.2
 urllib3==1.26.3
 uvicorn==0.13.3
-virtualenv==20.4.2
+virtualenv==20.11.1
 wcwidth==0.2.5
 Werkzeug==1.0.1
 wrapt==1.12.1
