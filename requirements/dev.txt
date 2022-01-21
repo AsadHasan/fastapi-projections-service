@@ -21,7 +21,7 @@ graphql-relay==3.1.0
 graphql-server-core==2.0.0
 h11==0.12.0
 idna==3.1
-ipython==7.21.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.18.0
@@ -110,7 +110,7 @@ h11==0.12.0
 identify==2.1.0
 idna==3.1
 iniconfig==1.1.1
-ipython==7.21.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.18.0
@@ -202,7 +202,7 @@ h11==0.12.0
 identify==2.1.0
 idna==3.1
 iniconfig==1.1.1
-ipython==7.21.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 isort==5.7.0
 itsdangerous==1.1.0
@@ -322,7 +322,7 @@ h11==0.12.0
 identify==2.1.0
 idna==3.1
 iniconfig==1.1.1
-ipython==7.21.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 isort==5.7.0
 itsdangerous==1.1.0
@@ -443,7 +443,7 @@ h11==0.12.0
 identify==2.1.0
 idna==3.1
 iniconfig==1.1.1
-ipython==7.21.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 isort==5.7.0
 itsdangerous==1.1.0
