@@ -238,7 +238,7 @@ py==1.10.0
 pycodestyle==2.6.0
 pydantic==1.8.1
 pydocstyle==5.1.1
-pyflakes==2.2.0
+pyflakes==3.0.0
 Pygments==2.8.1
 pylama==7.7.1
 pylint==2.7.2
@@ -358,7 +358,7 @@ py==1.10.0
 pycodestyle==2.6.0
 pydantic==1.8.1
 pydocstyle==5.1.1
-pyflakes==2.2.0
+pyflakes==3.0.0
 Pygments==2.8.1
 pylama==7.7.1
 pylint==2.7.2
@@ -478,7 +478,7 @@ py==1.10.0
 pycodestyle==2.6.0
 pydantic==1.8.1
 pydocstyle==5.1.1
-pyflakes==2.2.0
+pyflakes==3.0.0
 Pygments==2.8.1
 pylama==7.7.1
 pylint==2.7.2
