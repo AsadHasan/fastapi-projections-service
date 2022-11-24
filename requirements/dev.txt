@@ -183,7 +183,7 @@ dodgy==0.2.1
 fastapi==0.63.0
 fb-sapp==0.2.8
 filelock==3.0.12
-flake8==3.8.4
+flake8==6.0.0
 flake8-polyfill==1.0.2
 Flask==1.1.2
 Flask-BasicAuth==0.2.0
@@ -303,7 +303,7 @@ dodgy==0.2.1
 fastapi==0.63.0
 fb-sapp==0.2.8
 filelock==3.0.12
-flake8==3.8.4
+flake8==6.0.0
 flake8-polyfill==1.0.2
 Flask==1.1.2
 Flask-BasicAuth==0.2.0
@@ -424,7 +424,7 @@ dodgy==0.2.1
 fastapi==0.63.0
 fb-sapp==0.2.8
 filelock==3.0.12
-flake8==3.8.4
+flake8==6.0.0
 flake8-polyfill==1.0.2
 Flask==1.1.2
 Flask-BasicAuth==0.2.0
